@@ -3,6 +3,9 @@ import {HERO_CONTENT} from '../constants';
 import profilePic from '../assets/kevinRushProfile.png';
 import {motion} from 'framer-motion';
 
+
+import {useTypewriter,Cursor} from 'react-simple-typewriter';
+
 const container = (delay)=>({
 
     hidden:{
@@ -15,7 +18,13 @@ const container = (delay)=>({
     },
 })
 
+
+
+
 const Hero = () => {
+
+
+
   return (
     <div className='border-b border-neutral-900 pb-4 md:pl-10 lg:m-35'>
         <div className='flex flex-wrap'>
@@ -34,6 +43,8 @@ const Hero = () => {
                 className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent'>
                     Full Stack Developer
                 </motion.span>
+
+
                 <motion.p 
                 
                 variants={container(1)}
